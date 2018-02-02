@@ -1,0 +1,4 @@
+xOldBeacon
+src/*.java
+*.esproj
+*-bak*

@@ -1,0 +1,22 @@
+{
+  "name": "beacon",
+  "version": "0.1a1",
+  "description": "JavaScript implementation of First Beacon",
+  "main": "beacon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhowe/ReadersJS.git"
+  },
+  "author": "John Cayley",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dhowe/ReadersJS/issues"
+  },
+  "homepage": "https://github.com/dhowe/ReadersJS#readme",
+  "dependencies": {
+    "lokijs": "^1.5.2"
+  }
+}
