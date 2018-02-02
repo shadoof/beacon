@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhowe/ReadersJS.git"
+    "url": "git+https://github.com/shadoof/beacon.git"
   },
   "author": "John Cayley",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/dhowe/ReadersJS/issues"
+    "url": "https://github.com/shadoof/beacon/issues"
   },
-  "homepage": "https://github.com/dhowe/ReadersJS#readme",
+  "homepage": "https://github.com/shadoof/beacon#readme",
   "dependencies": {
     "lokijs": "^1.5.2"
   }
