@@ -4,7 +4,8 @@
   "description": "JavaScript implementation of First Beacon",
   "main": "beacon.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint beacon.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/shadoof/beacon#readme",
   "dependencies": {
+    "jshint": "^2.9.5",
     "lokijs": "^1.5.2"
   }
 }
