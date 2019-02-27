@@ -1,0 +1,35 @@
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<script src="resources/processing.js"></script>
+<script src="resources/rita.js"></script>
+<script src="beacon_client.js"></script>
+
+<script type="text/processing" data-processing-target="mycanvas">
+
+/* @pjs font="resources/Perpetua.ttf"; */
+
+void setup() {
+	size(640, 480);
+	background(223);
+	noCursor();
+	rt = RiText("... waiting to poll states ...",60,60,RiText.defaultFont("resources/Perpetua.ttf",24,28));
+	bc = new BeaconClient(undefined,"k");
+	setInterval(pollBeacon, 3000); // every 3 seconds
+}
+
+void draw() {
+	background(223);
+	RiText.drawAll();
+}
+
+function pollBeacon() {
+	rt.text(bc.doStatesStr());
+	var a1 = bc.doFirstSet();
+	var a2 = bc.doSecondSet();
+	// console.log(a1[3]); // DEBUG
+}
+
+</script>
+
+<canvas id="mycanvas" style="border: 1px solid #000000;"></canvas>
